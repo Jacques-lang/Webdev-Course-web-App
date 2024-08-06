@@ -1,4 +1,4 @@
-The web application appears to be a simple educational website for learning HTML and CSS. Here's a breakdown of the functionality based on the provided code:
+The web application appears to be an educational website for learning HTML and CSS. Here's a breakdown of the functionality based on the provided code:
 
 1. `index.html`: This file is not fully provided, but it's typically the main or home page of a website. It likely contains introductory content and links to other parts of the website.
 

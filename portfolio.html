@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDevs - About Us</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- JavaScript File -->
+  <script src="js/script.js" defer></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header class="desktop">
+  <!-- Desktop Header -->
+  <div class="desktop-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="header-bottom">
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Tablet Navigation Bar -->
+<header class="tablet">
+  <div class="tablet-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="tablet-bottom">
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Mobile Navigation Bar -->
+<header class="mobile" id="top-length">
+  <div class="mobile-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo" id="web-logo"></a> <!-- Logo at the top-left -->
+    <h1 id="header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="map.html">Map</a>
+      <a href="portfolios.html">About Us</a>
+      <a href="table.html">Table</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>
+    </a>
+  </nav>
+</header>
+<main>
+  <!-- Main Section -->
+  <h2>About Us</h2> <!-- Heading for About Us section -->
+  <div class="profile">
+    <!-- Profile of Jacques Assaka -->
+    <h3>Jacques Assaka</h3>
+    <img src="img/jacques.JPG" alt="Jacques Assaka" class="profile-photo">
+    <p>Jacques Assaka is a passionate web developer studying at Southern Utah University. He specializes in HTML, CSS,
+      and JavaScript, aiming to create accessible and user-friendly web applications. He also enjoys developing mobile
+      applications using Kotlin/Java as well as working on Leetcode. He is also an aspiring Python developer and wishes
+      to land a job working in machine learning.</p>
+    <p>Email: <a href="mailto:jacquesassaka2004@gmail.com">jacquesassaka2004@gmail.com</a></p>
+  </div>
+</main>
+<footer>
+  <!-- Footer -->
+  <p>© 2024 WebDevs. All rights reserved.</p>
+  <p>This page was completed by Cory Stevens - See his portfolio <a href="portfolios.html">here</a>.</p>
+</footer>
+</body>
+</html>

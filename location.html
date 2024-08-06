@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDevs - Map</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- JavaScript File -->
+  <script src="js/script.js" defer></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header class="desktop">
+  <!-- Desktop Header -->
+  <div class="desktop-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="header-bottom">
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Tablet Navigation Bar -->
+<header class="tablet" id="map-height">
+  <div class="tablet-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1 id="map-header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="tablet-bottom">
+    <!-- Navigation Menu -->
+    <nav id="map-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Mobile Navigation Bar -->
+<header class="mobile" id="top-length">
+  <div class="mobile-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo" id="web-logo"></a> <!-- Logo at the top-left -->
+    <h1 id="header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="map.html">Map</a>
+      <a href="portfolios.html">About Us</a>
+      <a href="table.html">Table</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>
+    </a>
+  </nav>
+</header>
+<main>
+  <!-- Main Section -->
+  <h2>Map</h2> <!-- Heading for map section -->
+  <p>Locate us here through this map:</p> <!-- Description of map -->
+  <div class="map-container">
+    <!-- Map iframe -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6315.6814392331025!2d-113.07388038807034!3d37.67645031770025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b561bdf3f4df7d%3A0xe8a43b8225b747dc!2sSouthern%20Utah%20University!5e0!3m2!1sen!2sus!4v1713304567625!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Form Section -->
+  <div class="form-container">
+    <!-- Contact form -->
+    <h3>Any Questions? Contact Us!</h3>
+    <form>
+      <div class="mb-3">
+        <label for="InputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="InputEmail1">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="InputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="InputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="password" class="form-control" id="subject">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label"> Please leave a review</label>
+        <input type="email" class="form-control" id="message">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check if done.</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</main>
+<footer>
+  <!-- Footer -->
+  <p>© 2024 Learn HTML & CSS. All rights reserved.</p>
+  <p>This page was completed by Cory Stevens - See his portfolio <a href="portfolios.html">here</a>.</p>
+</footer>
+
+</body>
+</html>

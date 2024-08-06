@@ -1,0 +1,122 @@
+<!-- Jacques Assaka, Cory Stevens 4/16/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- The head tag here represents standard html elements and also links the CSS/JavaScript to the home page. Additionally, a font is pulled in from Google to style the website -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDevs</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!-- Desktop nav bar -->
+<header class="desktop">
+  <div class="desktop-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="header-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Tablet nav bar -->
+<header class="tablet">
+  <div class="tablet-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="tablet-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile nav bar -->
+<header class="mobile" id="top-length">
+  <div class="mobile-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo" id="web-logo"></a> <!-- Logo at the top-left -->
+    <h1 id="header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <nav class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="map.html">Map</a>
+      <a href="portfolios.html">About Us</a>
+      <a href="table.html">Table</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>
+    </a>
+  </nav>
+</header>
+
+<!-- Video entry -->
+<div id="media-entry">
+  <video src="media/homepageVid.mp4" autoplay muted loop controlsList="nodownload">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Main content -->
+<main>
+  <div class="grid-container">
+    <section>
+      <h2>Welcome to Your Learning Journey!</h2>
+      <p>Welcome to our comprehensive resource for learning HTML and CSS! Whether you're a beginner or looking to refine your skills, we have the resources and guidance to help you master these essential web development technologies.</p>
+      <p>Explore our courses, check out our learning map for a structured path, or view example portfolios created with HTML and CSS.</p>
+    </section>
+    <section>
+      <h2>What are<br>HTML & CSS?</h2>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications. CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML or XML.</p>
+      <p>Together, they are the backbone of web development, allowing the creation of structured documents and stylistic excellence.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ol>
+        <li>Interactive Courses</li>
+        <li>Step-by-Step Guides</li>
+        <li>Real-world Examples</li>
+        <li>Up-to-date Techniques</li>
+      </ol>
+      <a href="courses.html"><button class="mybutton">View Courses Here!</button></a>
+    </section>
+    <section>
+      <h2>WebDevs Founders</h2>
+      <ul>
+        <li>Cory Stevens</li>
+        <li>Jacques Assaka</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 Learn HTML & CSS. All rights reserved.</p>
+  <p>This page was completed by both Cory Stevens and Jacques Assaka - See their portfolios <a href="portfolios.html">here</a>.</p>
+  <p>Follow us on Facebook and X here:</p>
+  <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+  <a href="https://x.com"><img src="img/x.png" alt="X"></a>
+</footer>
+
+</body>
+</html>

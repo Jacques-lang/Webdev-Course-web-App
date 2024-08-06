@@ -1,0 +1,330 @@
+
+<!doctype html>
+<!-- Jacques Assaka, Cory Stevens Date: 4/12/2024 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDevs - Courses</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header class="desktop">
+  <div class="desktop-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="header-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Tablet nav bar -->
+<header class="tablet">
+  <div class="tablet-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="tablet-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<header class="mobile" id="top-length">
+  <div class="mobile-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo" id="web-logo"></a> <!-- Logo at the top-left -->
+    <h1 id="header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <nav class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="map.html">Map</a>
+      <a href="portfolios.html">About Us</a>
+      <a href="table.html">Table</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>
+    </a>
+  </nav>
+</header>
+
+
+<!-- Main Content -->
+<main class="content-top">
+  <img src="img/tableimage.jpg" alt="image with animation" class="html-tags-image">
+  <h2>Commonly Used Html Tags</h2>
+  <!-- Table for desktop -->
+  <div class="desktop">
+    <table class="table table-striped table-hover indented-table">
+      <thead class="thead-dark">
+      <!-- First row -->
+      <tr>
+        <th>Html Tags</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>This tag defines a paragraph.</td>
+      </tr>
+      <tr>
+        <td>&lt;html&gt;</td>
+        <td>This tag is the root of an HTML document. All other tags are nested within this tag.</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt;</td>
+        <td>This tag contains meta-information about the document, such as its title and links to stylesheets.</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;</td>
+        <td>This tag sets the title of the document, which appears in the browser tab.</td>
+      </tr>
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>This tag contains the content of the document, such as text, images, and other elements.</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+        <td>These tags define headings of different sizes, with &lt;h1&gt; being the largest and &lt;h6&gt; being the smallest.</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>This tag creates a hyperlink to another web page or resource.</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>This tag embeds an image in the document.</td>
+      </tr>
+      <tr>
+        <td>&lt;ul&gt;</td>
+        <td>This tag creates an unordered list, where each item is marked with a bullet point.</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt;</td>
+        <td>This tag creates an ordered list, where each item is numbered.</td>
+      </tr>
+      <tr>
+        <td>&lt;li&gt;</td>
+        <td>This tag defines an item in a list, either ordered or unordered.</td>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>This tag creates a table to display data in rows and columns.</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td>
+        <td>This tag defines a row in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>This tag defines a header cell in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>This tag defines a data cell in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>This tag defines a division or section in an HTML document.</td>
+      </tr>
+      <tr>
+        <td>&lt;span&gt;</td>
+        <td>This tag defines a section in an HTML document that can be styled separately from the rest of the content.</td>
+      </tr>
+      <tr>
+        <td>&lt;form&gt;</td>
+        <td>This tag creates a form for user input, such as text fields and buttons.</td>
+      </tr>
+      <tr>
+        <td>&lt;input&gt;</td>
+        <td>This tag creates an input field in a form, such as a text box or a radio button.</td>
+      </tr>
+      <tr>
+        <td>&lt;button&gt;</td>
+        <td>This tag creates a clickable button in a form.</td>
+      </tr>
+      <tr>
+        <td>&lt;label&gt;</td>
+        <td>This tag defines a label for an input field in a form.</td>
+      </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+  <!-- Table for tablet -->
+  <div class="tablet">
+    <table class="table table-striped table-hover indented-table">
+      <thead class="thead-dark">
+      <!-- First row -->
+      <tr>
+        <th>Html Tags</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>This tag defines a paragraph.</td>
+      </tr>
+      <tr>
+        <td>&lt;html&gt;</td>
+        <td>This tag is the root of an HTML document. All other tags are nested within this tag.</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt;</td>
+        <td>This tag contains meta-information about the document, such as its title and links to stylesheets.</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;</td>
+        <td>This tag sets the title of the document, which appears in the browser tab.</td>
+      </tr>
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>This tag contains the content of the document, such as text, images, and other elements.</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+        <td>These tags define headings of different sizes, with &lt;h1&gt; being the largest and &lt;h6&gt; being the smallest.</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>This tag creates a hyperlink to another web page or resource.</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>This tag embeds an image in the document.</td>
+      </tr>
+      <tr>
+        <td>&lt;ul&gt;</td>
+        <td>This tag creates an unordered list, where each item is marked with a bullet point.</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt;</td>
+        <td>This tag creates an ordered list, where each item is numbered.</td>
+      </tr>
+      <tr>
+        <td>&lt;li&gt;</td>
+        <td>This tag defines an item in a list, either ordered or unordered.</td>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>This tag creates a table to display data in rows and columns.</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td>
+        <td>This tag defines a row in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>This tag defines a header cell in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>This tag defines a data cell in a table.</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>This tag defines a division or section in an HTML document.</td>
+      </tr>
+      <tr>
+        <td>&lt;span&gt;</td>
+        <td>This tag defines a section in an HTML document that can be styled separately from the rest of the content.</td>
+      </tr>
+      <tr>
+        <td>&lt;form&gt;</td>
+        <td>This tag creates a form for user input, such as text fields and buttons.</td>
+      </tr>
+      <tr>
+        <td>&lt;input&gt;</td>
+        <td>This tag creates an input field in a form, such as a text box or a radio button.</td>
+      </tr>
+      <tr>
+        <td>&lt;button&gt;</td>
+        <td>This tag creates a clickable button in a form.</td>
+      </tr>
+      <tr>
+        <td>&lt;label&gt;</td>
+        <td>This tag defines a label for an input field in a form.</td>
+      </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+  <!-- Table for mobile -->
+  <div class="mobile">
+    <table class="table table-striped table-hover indented-table">
+      <thead class="thead-dark">
+      <!-- First row -->
+      <tr>
+        <th>Html Tags</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>This tag defines a paragraph.</td>
+      </tr>
+      <tr>
+        <td>&lt;html&gt;</td>
+        <td>This tag is the root of an HTML document. All other tags are nested within this tag.</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt;</td>
+        <td>This tag contains meta-information about the document, such as its title and links to stylesheets.</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;</td>
+        <td>This tag sets the title of the document, which appears in the browser tab.</td>
+      </tr>
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>This tag contains the content of the document, such as text, images, and other elements.</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+        <td>These tags define headings of different sizes, with &lt;h1&gt; being the largest and &lt;h6&gt; being the smallest.</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>This tag creates a hyperlink to another web page or resource.</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>This tag embeds an image in the document.</td>
+      </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</main>
+<footer>
+  <p>© 2024 Learn HTML & CSS. All rights reserved.</p>
+  <p>This page was completed by Jacques Assaka - See his portfolio <a href="portfolios.html">here</a>.</p>
+</footer>
+</body>
+</html>

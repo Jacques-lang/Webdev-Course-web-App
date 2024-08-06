@@ -1,0 +1,480 @@
+/* Resetting default margin and padding for specific elements */
+body, h1, h2, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styling for body */
+body {
+  line-height: 1.6;
+  background-color: #EED9C4;
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+}
+.mybutton{
+  border-radius: 5px;
+  background-color: #4169E1; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; /* Mouse pointer changes when you hover over it */
+  transition-duration: 0.4s;
+}
+
+/* Styling for iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide desktop and tablet navigation by default */
+.desktop, .tablet {
+  display: none;
+}
+
+/* Styling for mobile navigation */
+.mobile-nav a {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Show mobile navigation and hide desktop/tablet navigation by default */
+.mobile {
+  display: block;
+}
+
+.tablet-desktop, #menu-links {
+  display: none;
+}
+
+/* Header styling */
+header {
+  background-color: #005a9c;
+  color: white;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  height: 150px;
+}
+
+/* Styling for mobile top section */
+.mobile-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 1;
+}
+
+/* Styling for mobile logo */
+.mobile-top .logo {
+  position: absolute;
+  left: 0;
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  transform: translate(30%,-40%);
+}
+
+/* Styling for mobile header */
+.mobile-top h1 {
+  padding-top: 3px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+  0 0 15px rgba(255, 255, 255, 0.5),
+  0 0 25px rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: translateY(300%);
+}
+
+/* Styling for header bottom */
+.header-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 24px;
+}
+
+/* Styling for media entry */
+#media-entry {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling for media entry video */
+#media-entry video {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Styling for header navigation */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+}
+
+/* Styling for header navigation links */
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+  background: white;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section styling */
+section {
+  margin-bottom: 20px;
+}
+
+/* Styling for headings */
+h1, h2 {
+  color: black;
+}
+
+h2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #005a9c;
+}
+
+/* Styling for lists */
+ul {
+  padding: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Styling for profile photos */
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
+
+/* Grid layout for main section */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid-container ol {
+  margin: 5px;
+  padding: 5px;
+}
+
+.grid-container ul {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Styling for sections */
+section {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Media query for mobile viewport */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjusting heading for courses page in mobile viewport */
+  .courses-section h2 {
+    margin-top: 20px;
+  }
+}
+
+/* Table styling for table.html */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #cbfdfd;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Table image/CSS animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.html-tags-image {
+  animation: slideIn 1s ease forwards;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Courses image/CSS animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.courses-image {
+  animation: fadeIn 1s ease forwards;
+  width: 25%; /* You can adjust this value to change the width of the image */
+  height: auto; /* This ensures the height adjusts proportionally based on the width */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media query for tablet */
+@media screen and (min-width: 668px) {
+  .mobile, .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  /* Adjusting tablet top section styling */
+  .tablet-top .logo {
+    position: absolute;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    transform: translate(65%,-48%);
+  }
+  .tablet-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+  }
+  /* Adjusting tablet bottom navigation styling */
+  .tablet-bottom nav {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+
+  .tablet-bottom nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .tablet-bottom nav li {
+    font-size: 20px;
+    display:inline-block;
+    border-right: 1px solid #fff;
+    transform: translateY(150%);
+  }
+
+  .tablet-bottom nav li:last-child {
+    border-right: none;
+  }
+
+  .tablet-bottom nav li a {
+    padding: 0.1em 0.75em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Adjusting tablet top header styling */
+  .tablet-top h1 {
+    padding-top: 3px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 25px rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(170%);
+  }
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 1015px), print {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  /* Making header sticky */
+  header {
+    position: sticky;
+  }
+
+  /* Adjusting header navigation styling */
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  header nav ul li a:hover {
+    transform: scale(1.2);
+    color: #FFD700;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  /* Adjusting desktop top section styling */
+  .desktop-top .logo {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .desktop-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+  }
+
+  /* Adjusting desktop top header styling */
+  .desktop-top h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.7),
+      0 0 15px rgba(255, 255, 255, 0.5),
+      0 0 25px rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  header {
+    height: 120px;
+  }
+  .mybutton:hover {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid  #4169E1; /* Green border */
+  }
+}
+
+/* Stylesheet completed by both Cory Stevens and Jacques Assaka */

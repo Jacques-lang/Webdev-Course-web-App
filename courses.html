@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDevs - Courses</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header class="desktop">
+  <div class="desktop-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="header-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Tablet nav bar -->
+<header class="tablet">
+  <div class="tablet-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo"></a> <!-- Logo at the top-left -->
+    <h1>WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <div class="tablet-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="portfolios.html">About Us</a></li>
+        <li><a href="table.html">Table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<header class="mobile" id="top-length">
+  <div class="mobile-top">
+    <a href="index.html"><img src="img/logo%20(1).png" alt="WebDevs Logo" class="logo" id="web-logo"></a> <!-- Logo at the top-left -->
+    <h1 id="header">WebDevs - HTML & CSS Course</h1> <!-- Title at the top-center -->
+  </div>
+  <nav class="mobile-nav">
+    <div id="menu-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="map.html">Map</a>
+      <a href="portfolios.html">About Us</a>
+      <a href="table.html">Table</a>
+    </div>
+    <a class="menu-icon" onclick="hamburger()">
+      <div>&#9776;</div>
+    </a>
+  </nav>
+</header>
+<!-- Courses Image with animation in JavaScript -->
+<img src="img/coursesimage.jpg" alt="Courses Image" class="courses-image" onload="animateImage(this)">
+<section class="courses-section">
+  <!-- Courses Section -->
+  <h2>Our Courses</h2> <!-- Heading for courses -->
+  <div class="course">
+    <!-- Course 1 -->
+    <h3>HTML Basics</h3>
+    <p>A beginner-friendly course to get you started with HTML. Learn how to structure web pages and create content with HTML.</p>
+    <ul>
+      <li>Duration: 4 weeks</li>
+      <li>Price: $99</li>
+    </ul>
+  </div>
+  <div class="course">
+    <!-- Course 2 -->
+    <h3>CSS Essentials</h3>
+    <p>Take your web design skills to the next level with CSS. Learn how to style HTML elements and create beautiful layouts.</p>
+    <ul>
+      <li>Duration: 6 weeks</li>
+      <li>Price: $129</li>
+    </ul>
+  </div>
+  <div class="course">
+    <!-- Course 3 -->
+    <h3>HTML & CSS Masterclass</h3>
+    <p>This comprehensive course covers both HTML and CSS in-depth, equipping you with the skills to build professional-looking websites from scratch.</p>
+    <ul>
+      <li>Duration: 10 weeks</li>
+      <li>Price: $199</li>
+    </ul>
+    <a href="map.html"><button class="mybutton">Make a payment</button></a>
+
+  </div>
+</section>
+<footer>
+  <!-- Footer -->
+  <p>© 2024 WebDevs. All rights reserved.</p>
+  <p>This page was created by Jacques Assaka. See his portfolio <a href="portfolios.html">here</a>.</p>
+</footer>
+
+</body>
+</html>
